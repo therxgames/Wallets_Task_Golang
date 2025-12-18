@@ -7,7 +7,6 @@ RUN go mod download
 
 COPY . .
 
-# Собираем main.go из cmd/app
 RUN go build -o wallet_app ./cmd/app
 
 EXPOSE 8080
